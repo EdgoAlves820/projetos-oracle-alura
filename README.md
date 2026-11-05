@@ -1,3 +1,3 @@
 ## projetos-oracle-alura
 
-Aqui serão salvos todo os projetos feito do curso Front-End pela Oracle + Alura...
+Aqui serão salvos todos os projetos feitos nos cursos da Oracle + Alura
