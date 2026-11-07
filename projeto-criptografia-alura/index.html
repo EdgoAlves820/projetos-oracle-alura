@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Decodificador de texto</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header><img src="img/logo.png" alt="Logo da Alura" class="logo"></header>
+  <main class="main">
+    <section class="entrada" aria-label="Texto de entrada">
+      <label class="sr-only" for="entrada">Digite seu texto</label>
+      <textarea id="entrada" class="input" placeholder="Digite seu texto..." spellcheck="false"></textarea>
+      <div class="info"><img src="img/!.png" alt=""><span>Apenas letras minúsculas e sem acento.</span></div>
+      <div class="botoes">
+        <button type="button" class="encriptar" id="criptografar">Criptografar</button>
+        <button type="button" class="desencriptar" id="descriptografar">Descriptografar</button>
+        <button type="button" class="colar" id="colar">Colar</button>
+      </div>
+      <p id="aviso" role="status" aria-live="polite"></p>
+    </section>
+    <section class="lado2" aria-label="Resultado">
+      <div id="vazio" class="vazio">
+        <img src="img/boneco.jpg" alt="Pessoa olhando um diamante com uma lupa">
+        <p class="texto1">Nenhuma mensagem encontrada</p>
+        <p class="texto2">Digite um texto que você deseja criptografar ou descriptografar.</p>
+      </div>
+      <label class="sr-only" for="resultado">Resultado</label>
+      <textarea id="resultado" class="message" readonly hidden></textarea>
+      <button type="button" class="copiar" id="copiar" hidden>Copiar</button>
+    </section>
+  </main>
+  <footer class="footer">Desenvolvido por Edgo Alves - &copy; 2022 · <a href="https://github.com/EdgoAlves820" target="_blank" rel="noopener noreferrer">GitHub</a> · <a href="https://www.linkedin.com/in/edgo820">LinkedIn</a></footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

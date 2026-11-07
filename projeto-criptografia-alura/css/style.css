@@ -1,0 +1,29 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #fecff2; color: #0a3871; font-family: Inter, Arial, sans-serif; min-height: 100vh; display: flex; flex-direction: column; }
+header { padding: 32px 5%; }
+.logo { max-width: 120px; height: auto; }
+.main { width: min(1200px, 90%); margin: 0 auto 40px; display: grid; grid-template-columns: minmax(0, 2fr) minmax(280px, 1fr); gap: 32px; flex: 1; }
+.entrada { display: flex; flex-direction: column; min-width: 0; }
+textarea { font: inherit; color: #0a3871; resize: vertical; }
+.input { width: 100%; min-height: 360px; padding: 16px; border: 0; border-radius: 16px; background: rgba(255,255,255,.65); font-size: 28px; }
+.input::placeholder { color: #0a3871; opacity: .8; }
+.info { display: flex; gap: 8px; align-items: center; margin: 18px 0; font-size: 14px; color: #495057; }
+.info img { width: 16px; height: 16px; object-fit: contain; }
+.botoes { display: flex; flex-wrap: wrap; gap: 10px; }
+button { border: 1px solid #0a3871; border-radius: 20px; padding: 15px 24px; font: inherit; cursor: pointer; background: #d8dfe8; color: #0a3871; }
+button:hover { filter: brightness(.93); }
+button:focus-visible, textarea:focus-visible { outline: 3px solid #ce15aa; outline-offset: 2px; }
+.encriptar { background: #0a3871; color: white; }
+#aviso { min-height: 1.5em; font-size: 14px; }
+.lado2 { background: white; border-radius: 32px; box-shadow: 0 24px 32px -8px rgba(0,0,0,.08); padding: 24px; display: flex; flex-direction: column; min-height: 480px; }
+.vazio { margin: auto; text-align: center; color: #343a40; }
+.vazio img { max-width: 100%; height: auto; }
+.texto1 { font-size: 24px; font-weight: 700; }
+.texto2 { font-size: 16px; color: #495057; }
+.message { width: 100%; flex: 1; min-height: 260px; border: 0; font-size: 24px; }
+.copiar { width: 100%; margin-top: 20px; }
+[hidden] { display: none !important; }
+.footer { padding: 18px; background: #0a3871; color: white; text-align: center; font-size: 14px; }
+.footer a { color: white; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+@media (max-width: 760px) { .main { grid-template-columns: 1fr; } .input { min-height: 230px; } .lado2 { min-height: 300px; } .vazio img { max-height: 200px; } .botoes button { flex: 1 1 180px; } }
